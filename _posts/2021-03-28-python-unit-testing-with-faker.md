@@ -78,7 +78,7 @@ Create a `test_user.py` file in the project directory and copy/paste the code be
 import unittest
 from user import User
 
-class testUser(unittest.TestCase):
+class TestUser(unittest.TestCase):
 
     def test_user_name(self):
         usr = User('jdoe', 'John', 'Doe', 'President')
@@ -102,7 +102,7 @@ Our single test passed but there are a couple of problems with it. For one, we a
 import unittest
 from user import User
 
-class testUser(unittest.TestCase):
+class TestUser(unittest.TestCase):
 
     def test_user_name(self):
         user_name = 'jdoe'
@@ -141,7 +141,7 @@ import unittest
 from faker import Faker
 from user import User
 
-class UserTest(unittest.TestCase):
+class TestUser(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
